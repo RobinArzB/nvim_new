@@ -1,0 +1,6 @@
+require 'user.globals'
+require 'user.disable_builtin'
+require 'user.options'
+require 'user.lazy'
+require 'user.keymaps'
+require 'user.custom'
