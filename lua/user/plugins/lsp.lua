@@ -54,7 +54,8 @@ return { -- LSP Configuration & Plugins
       dockerls = {},
       terraformls = {},
       yamlls = {},
-      pyright = {},
+      pylsp = {},
+      -- pyright = {},
       -- ocamllsp = {},
       -- rust_analyzer = {},
       lua_ls = {
