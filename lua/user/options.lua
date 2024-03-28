@@ -92,6 +92,8 @@ opt.joinspaces = false -- Two spaces and grade school, we're done
 
 -- set fillchars=eob:~
 opt.fillchars = { eob = '~' }
+opt.list = true
+opt.listchars = 'eol:↲'
 
 vim.opt.diffopt = { 'internal', 'filler', 'closeoff', 'hiddenoff', 'algorithm:minimal' }
 
