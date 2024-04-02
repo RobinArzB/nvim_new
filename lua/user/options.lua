@@ -20,7 +20,7 @@ opt.smartcase = true -- ... unless there is a capital letter in the query
 opt.hidden = true -- I like having buffers stay around
 opt.equalalways = false -- I don't like my windows changing all the time
 opt.splitright = true -- Prefer windows splitting to the right
-opt.splitbelow = true -- Prefer windows splitting to the bottom
+opt.splitbelow = false -- Prefer windows splitting to the bottom
 opt.updatetime = 1000 -- Make updates happen faster
 opt.hlsearch = true -- I wouldn't use this without my DoNoHL function
 opt.scrolloff = 10 -- Make it so there are always ten lines below my cursor
@@ -90,10 +90,9 @@ opt.formatoptions = opt.formatoptions
 -- set joinspaces
 opt.joinspaces = false -- Two spaces and grade school, we're done
 
--- set fillchars=eob:~
 opt.fillchars = { eob = '~' }
 opt.list = true
-opt.listchars = 'eol:↲'
+opt.listchars = { eol = '↲', tab = '  ', trail = ' ', extends = ' ', precedes = ' ', nbsp = ' ' }
 
 vim.opt.diffopt = { 'internal', 'filler', 'closeoff', 'hiddenoff', 'algorithm:minimal' }
 

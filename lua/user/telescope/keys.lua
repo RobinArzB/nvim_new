@@ -35,8 +35,8 @@ map_tele('<space>sag', 'sourcegraph_about_grep')
 -- map_tele('<space>fz', 'sourcegraph_tips')
 
 -- Git
-map_tele('<space>gs', 'git_status')
-map_tele('<space>gc', 'git_commits')
+-- map_tele('<space>gs', 'git_status')
+-- map_tele('<space>gc', 'git_commits')
 
 -- Nvim
 map_tele('<space>fb', 'buffers')

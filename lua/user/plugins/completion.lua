@@ -17,6 +17,8 @@ return {
 
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-nvim-lua',
     },
     config = function()
       -- See `:help cmp`
@@ -52,7 +54,9 @@ return {
           end, { 'i', 's' }),
         },
         sources = {
+          { name = 'cody' },
           { name = 'nvim_lsp' },
+          { name = 'nvim_lua' },
           { name = 'luasnip' },
           { name = 'path' },
         },
