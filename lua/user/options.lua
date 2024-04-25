@@ -8,6 +8,10 @@ opt.pumblend = 17
 opt.wildmode = 'longest:full'
 opt.wildoptions = 'pum'
 
+opt.fillchars = { eob = '~' }
+opt.list = true
+opt.listchars = { tab = '» ', eol = '↲' }
+
 opt.showmode = false
 opt.showcmd = true
 opt.cmdheight = 1 -- Height of the command bar
@@ -89,10 +93,6 @@ opt.formatoptions = opt.formatoptions
 
 -- set joinspaces
 opt.joinspaces = false -- Two spaces and grade school, we're done
-
-opt.fillchars = { eob = '~' }
-opt.list = true
-opt.listchars = { eol = '↲', tab = '  ', trail = ' ', extends = ' ', precedes = ' ', nbsp = ' ' }
 
 vim.opt.diffopt = { 'internal', 'filler', 'closeoff', 'hiddenoff', 'algorithm:minimal' }
 
