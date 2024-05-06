@@ -2,7 +2,7 @@ return {
   { 'nvim-lua/plenary.nvim' },
   { 'tjdevries/express_line.nvim' },
 
-  'mkitt/tabline.vim',
+  -- 'mkitt/tabline.vim',
   'tpope/vim-sleuth',
 
   {
