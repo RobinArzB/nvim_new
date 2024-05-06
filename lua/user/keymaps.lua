@@ -46,6 +46,11 @@ map('n', '<C-,>', '<C-W><', { noremap = true, silent = true })
 -- Increase window width by 1
 map('n', '<C-;>', '<C-W>>', { noremap = true, silent = true })
 
+map('n', '<M-,>', '<c-w>5<')
+map('n', '<M-.>', '<c-w>5>')
+map('n', '<A-t>', '<C-W>+')
+map('n', '<A-s>', '<C-W>-')
+
 -- Toggle cody chat
 map('n', '<leader>cc', function()
   require('sg.cody.commands').toggle()
