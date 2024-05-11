@@ -167,15 +167,3 @@ require('el').setup {
     return result
   end,
 }
-
---[[ require('fidget').setup {
-  text = {
-    spinner = 'moon',
-  },
-  align = {
-    bottom = true,
-  },
-  window = {
-    relative = 'editor',
-  },
-} ]]

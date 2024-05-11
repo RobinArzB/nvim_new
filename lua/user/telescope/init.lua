@@ -150,7 +150,7 @@ function M.buffer_git_files()
     cwd = vim.fn.expand '%:p:h',
     winblend = 10,
     border = true,
-    previewer = false,
+    previewer = true,
     shorten_path = false,
   })
 end

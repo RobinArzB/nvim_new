@@ -3,18 +3,8 @@ if not pcall(require, 'telescope') then
 end
 
 local actions = require 'telescope.actions'
-local action_state = require 'telescope.actions.state'
 local action_layout = require 'telescope.actions.layout'
 local putils = require 'telescope.previewers.utils'
-
-local set_prompt_to_entry_value = function(prompt_bufnr)
-  local entry = action_state.get_selected_entry()
-  if not entry or not type(entry) == 'table' then
-    return
-  end
-
-  action_state.get_current_picker(prompt_bufnr):reset_prompt(entry.ordinal)
-end
 
 require('telescope').setup {
   defaults = {
